@@ -1,0 +1,18 @@
+<div class="container">
+    <p></p>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+              <th colspan="2" class="text-center">Product List</th>
+            </tr>
+          </thead>
+        <tbody>
+            <ng-container *ngFor="let product of products">
+                <tr>
+                  <th scope="row">{{product.id}}</th>
+                  <th> <a  [routerLink]="'/product'"[queryParams]="{ productid: product.id }" routerLinkActive="active">{{product.name}}</a> </th>
+                </tr>
+              </ng-container>
+        </tbody>
+      </table>    
+</div>

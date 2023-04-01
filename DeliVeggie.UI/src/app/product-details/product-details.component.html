@@ -1,0 +1,22 @@
+<div class="container">
+    <p></p>
+    <h3>Product</h3>
+    <hr>
+    <div class="row">
+        <div class="col-sm-6">
+          <p>Id: </p>
+          <p>Name: </p>
+          <p>Entry Date:</p>
+          <p>Price for today (incl. reduction):</p>
+        </div>
+        <div class="col-sm-6" *ngIf="product != null">
+          <p>{{product.id}}</p>
+          <p>{{product.name}}</p>
+          <p>{{datePipeString}}</p>
+          <p>{{product.priceWithReduction}} <span>&#8364;</span></p>
+        </div>
+      </div>
+</div>
+
+  
+  
