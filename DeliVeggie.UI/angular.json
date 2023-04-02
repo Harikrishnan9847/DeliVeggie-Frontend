@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "DeliVeggie.Ui:build:production"
+              "browserTarget": "DeliVeggie.UI:build:production"
             },
             "development": {
-              "browserTarget": "DeliVeggie.Ui:build:development"
+              "browserTarget": "DeliVeggie.UI:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "DeliVeggie.Ui:build"
+            "browserTarget": "DeliVeggie.UI:build"
           }
         },
         "test": {

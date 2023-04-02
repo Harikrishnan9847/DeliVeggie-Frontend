@@ -11,7 +11,7 @@ import { HttpClient } from '@angular/common/http'
 })
 export class ProductService {
 
-  baseUrl = 'https://localhost:5001/api/';
+  baseUrl = 'http://localhost:44350/api/';
   constructor(private http: HttpClient) { }
 
   getAll() : Observable<Product[]>
